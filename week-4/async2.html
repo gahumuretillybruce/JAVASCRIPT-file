@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Random Image Generator 🖼️</h2>
+  <button onclick="loadImage()">Load Random Image</button>
+  
+  <div id="imageContainer" style="margin-top: 20px;">
+    <!-- Image will appear here -->
+  </div>
+
+  <script>
+    function loadImage() {
+      // This URL returns a random image every time
+      const imageUrl = "https://picsum.photos/400";
+
+      // Create an img element and show it
+      const img = document.createElement("img");
+      img.src = imageUrl;
+      img.alt = "Random image";
+      img.style.maxWidth = "100%";
+      img.style.border = "2px solid #ccc";
+      
+      const container = document.getElementById("imageContainer");
+      container.innerHTML = "";  // Clear previous image
+      container.appendChild(img);
+    }
+  </script>    
+</body>
+</html>

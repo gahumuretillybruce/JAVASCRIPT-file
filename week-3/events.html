@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="submit-btn">submit chick request</button>
+    <button onclick="alert('button clicked')"></button>
+
+
+
+    <form action="" id="my-form">
+        <label for="username">enter user name:</label>
+        <input type="text" id="username" name="username">
+        <input type="submit">
+
+    </form>
+
+
+    <script>
+        //form
+
+        const form = document.getElementById('my-form')
+        form.addEventListener('submit', function(event){
+            event.preventDefault
+            alert('automatic form submission blocked')
+        })
+
+        // const button = document.getElementById('submit-btn');
+        // // button.addEventListener('click', function(){
+        // //     alert("you clicked the button")
+        // // })
+
+        // function handleSubmit(){
+        //     alert('you submitted your request');
+        // }
+
+        // button.addEventListener('click', handleSubmit);
+
+        // document.getElementById('submitButton').onclick = function(){
+        //     alert('button clicked')
+        // }
+        </script>
+</body>
+</html>
